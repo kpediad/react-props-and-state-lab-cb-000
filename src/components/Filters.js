@@ -6,7 +6,6 @@ class Filters extends React.Component {
 
     this.state = {
       type: 'all'
-      }
     }
   }
 
