@@ -27,7 +27,12 @@ class App extends React.Component {
       .then(function(pets) {
           this.setState({pets: pets});
       });
-    }
+  }
+
+  adoptPet = () => {
+    
+  }
+    
 
   render() {
     return (
@@ -41,7 +46,7 @@ class App extends React.Component {
               <Filters onChangeType={type => this.setState({filters: type});} onFindPetsClick={this.fetchPets} />
             </div>
             <div className="twelve wide column">
-              <PetBrowser pets={this.state.pets}/>
+              <PetBrowser pets={this.state.pets} onAdoptPet={this.adoptPet}/>
             </div>
           </div>
         </div>
