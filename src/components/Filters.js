@@ -13,7 +13,7 @@ class Filters extends React.Component {
   handleChange = event => {
     this.setState({type: event.target.value});
   }
-  
+
   render() {
     return (
       <div className="ui form">
