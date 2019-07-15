@@ -20,12 +20,12 @@ class App extends React.Component {
     if (this.state.filters.type !== "all") {
       url = `/api/pets?type={this.state.filters.type}`;
     }
-    fetch('http://example.com/movies.json')
+    fetch(url)
       .then(function(response) {
           return response.json();
       })
-      .then(function(myJson) {
-          console.log(JSON.stringify(myJson));
+      .then(function(pets) {
+          this.setState(pets);
       });
     }
 
