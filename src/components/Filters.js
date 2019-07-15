@@ -12,6 +12,7 @@ class Filters extends React.Component {
 
   handleChange = event => {
     this.setState({type: event.target.value});
+    this.props.onChangeType({type: event.target.value});
   }
 
   render() {
