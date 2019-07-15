@@ -30,9 +30,9 @@ class App extends React.Component {
   }
 
   adoptPet = () => {
-    
+
   }
-    
+
 
   render() {
     return (
