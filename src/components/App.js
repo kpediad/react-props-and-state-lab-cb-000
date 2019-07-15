@@ -29,7 +29,7 @@ class App extends React.Component {
       });
   }
 
-  adoptPet = () => {
+  adoptPet = (id) => {
 
   }
 
