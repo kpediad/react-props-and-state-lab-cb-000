@@ -25,7 +25,7 @@ class App extends React.Component {
           return response.json();
       })
       .then(function(pets) {
-          this.setState(pets);
+          this.setState({pets: pets});
       });
     }
 
